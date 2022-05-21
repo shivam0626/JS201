@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Automobile Inheritance Model</h1>
+</body>
+</html>
+<script>
+
+    //using constructor function
+    function Automobile(name){
+        this.name = name;
+        this.brand = "Tata";
+        this.wheels = 4;
+        this.airbag = true;
+        this.powerwindow = 2;
+        this.seats = 5;
+        this.break = true;
+        this.maxSpeed = "180kmph";
+    }
+    let Car1 = new Automobile("Nexon");
+    let Car2 = new Automobile("Harrier");
+    let Car3 = new Automobile("Tiago");
+    let Car4 = new Automobile("Safari");
+    console.log(Car1);
+    console.log(Car2);
+    console.log(Car3);
+    console.log(Car4);
+
+    //using Object.create method
+
+    const Cars = {
+        brand : "Tata",
+        wheels : 4,
+        airbag : true,
+        seats: 5,
+        powerwindow : 2,
+        break : true,
+        maxSpeed: "180kmph",
+    };
+
+    let c1 = Object.create(Cars,{name :{value : "Nexon"}});
+    let c2 = Object.create(Cars,{name :{value : "Tiago"}});
+    let c3 = Object.create(Cars,{name :{value : "Altroz"}});
+    let c4 = Object.create(Cars,{name :{value : "Harrier"}});
+    console.log(c1);
+    console.log(c2);
+    console.log(c3);
+    console.log(c4);
+</script>

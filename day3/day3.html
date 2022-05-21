@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Inheritance</h3>
+</body>
+</html>
+<script>
+    // const NikeProduct = {
+    //     brand:"Nike",
+    //     logo:"data:image/png;base64,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",
+    //     seller:"Flipkart",
+    // };
+    // const p1 = Object.create(NikeProduct,{name:{value:"Air Jordan"}});
+    // const p2 = Object.create(NikeProduct,{name:{value:"Nike Air"}});
+    // const p3 = Object.create(NikeProduct,{name:{value:"Nike Sneakers 2.0"}});
+    // const p4 = Object.create(NikeProduct,{name:{value:"Nike Casuals 4.5"}});
+
+    // console.log(p1);
+    // console.log(p2);
+    // console.log(p3);
+    // console.log(p4);
+    
+    // function Product(type){
+    //     this.type = type;
+    //     this.brand = "Nike";
+    //     this.logo = "URL";
+    //     this.seller = "Flipkart";
+    // };
+
+    // Product.prototype.discount = function(){
+    //     console.log("20% discount")
+    // };
+
+    // Product.prototype.changeType = function(type){
+    //     this.type = type;
+    // };
+
+    // let p1 = new Product("Bag");
+    // let p2 = new Product("Shoes");
+    // console.log(p1);
+
+    // p1.changeType("T-shirt");
+    // console.log(p1);
+
+    // p2.discount();
+
+    function myArray(){
+        Object.defineProperty(this,"length",{
+            value: 0,
+            writable : true,
+            enumerable: false,
+        });
+
+        this.length = arguments.length;
+
+        for(let i=0; i<arguments.length; i++){
+            this[i] = arguments[i];
+        }
+    }
+    
+    let arr = new myArray(1,2,3,4,5);
+   
+
+    myArray.prototype.पुश = function (value) {
+        this[this.length] = value;
+        this.length++;
+    };
+
+    myArray.prototype.हटाओ = function () {
+        delete this[this.length - 1];
+        this.length--;
+    };
+
+    myArray.prototype.छापो = function () {
+    console.log(Object.values(this));
+    };
+
+arr.हटाओ();
+arr.पुश(7);
+arr.पुश(8);
+
+arr.छापो();
+
+</script>

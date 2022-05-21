@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Custom Array</h1>
+</body>
+</html>
+<script>
+     function myArray(){
+        Object.defineProperty(this,"length",{
+            value: 0,
+            writable : true,
+            enumerable: false,
+        });
+
+        this.length = arguments.length;
+
+        for(let i=0; i<arguments.length; i++){
+            this[i] = arguments[i];
+        }
+    }
+    
+    let arr = new myArray(1,2,3,4,5);
+   
+    //custom push function
+    myArray.prototype.mypush = function (value) {
+        this[this.length] = value;
+        this.length++;
+    };
+
+    //custom pop function
+    myArray.prototype.mypop = function () {
+        delete this[this.length - 1];
+        this.length--;
+    };
+
+    //custom print function
+    myArray.prototype.print = function () {
+        console.log(Object.values(this));
+    };
+
+    //custom top function
+    myArray.prototype.top = function(){
+        console.log(this[this.length-1]);
+    }
+
+    //custom reverse function
+    myArray.prototype.myreverse = function(){
+        let rev = []
+        for(let i=this.length-1; i>=0; i--){
+            rev.push(this[i]);
+        }
+        console.log(rev);
+    }
+    //custom size 
+    myArray.prototype.size = function(){
+        console.log(this.length);
+    }
+arr.mypop();
+arr.mypush(7);
+arr.mypush(8);
+arr.print();
+arr.myreverse();
+arr.top();
+arr.size();
+</script>
