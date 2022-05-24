@@ -1,0 +1,47 @@
+#navbar{
+    height: 60px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    background-color: darkslategray;
+}
+#batch_info{
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    margin: 20px ;
+    font-size: large;
+    color: white;
+}
+#dash_btn{
+    font-size: large;
+    text-decoration: none;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+#form_div{
+    margin: auto;
+    margin-left: 35%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+#name,#course,#unit,#image,#batch{
+    height: 30px;
+    outline: none;
+    width: 200px;
+} 
+#submitbtn{
+    height:35px;
+    width: 210px;
+    background-color: darkslategray;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}

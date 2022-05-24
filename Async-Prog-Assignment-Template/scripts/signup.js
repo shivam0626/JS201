@@ -15,5 +15,6 @@ function signUpFun() {
   userData.push(userObj);
 
   localStorage.setItem("SignupCreds",JSON.stringify(userData));
-
+  alert("Registration Successfull");
+  window.location.href = "login.html";
 }
