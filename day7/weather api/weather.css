@@ -1,0 +1,79 @@
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:440px;
+    width:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#main_box{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    height: 450px;
+    justify-content:end;
+    margin-top: 10px;
+    background-image: url("https://media-exp1.licdn.com/dms/image/C4D1BAQFVhpNDW2MoTw/company-background_10000/0/1568658087480?e=2147483647&v=beta&t=tfkl7DDy_yWBAp5uvpcTiRe9YU3NHtFQF8fAgZ3LRM4");
+}
+#box1{
+    width: 350px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    background-image: url("https://stormotion.io/blog/content/images/2018/08/weather-app-design.jpg");
+}
+#header{
+    background-color: rgb(135, 135, 239);
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 5px 0px 5px 0px;
+}
+h2{
+    font-family: sans-serif;
+    color:rgb(184, 28, 28);
+
+}
+#getWeather{
+    background-color: rgb(105, 105, 191);
+    border: 1px solid blue;
+    padding: 5px 10px 5px 10px;
+    color: aliceblue;
+    cursor: pointer;
+    height: 42px;
+    font-size: large;
+}
+#submit{
+    background-color: rgb(101, 189, 101);
+    border: 1px solid green;
+    padding: 6px 10px 6px 10px;
+    height: 42px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+#city{
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    width: 500px;
+    margin-left: 50px;
+    font-size: large;
+}
+
+h3{
+    font-family: sans-serif;
+    color:rgb(184, 28, 28);
+}
+p{
+    font-family: sans-serif;
+    line-height: 15px;
+    font-weight: bold;
+}

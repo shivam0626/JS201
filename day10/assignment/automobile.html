@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Automobile Inheritance</h1>
+</body>
+</html>
+<script>
+    class Automobile{
+        constructor(name,ep,ms){
+        this.name = name;
+        this.enginePower = ep;
+        this.brand = "Tata";
+        this.wheels = 4;
+        this.airbag = true;
+        this.powerwindow = 2;
+        this.seats = 5;
+        this.maxSpeed = ms;
+        }
+    }
+    let car1 = new Automobile("Nexon","8000cc","220kmph");
+    let car2 = new Automobile("Tiago","6000cc","190kmph");
+    let car3 = new Automobile("Altroz","5000cc","1800kmph");
+    let car4 = new Automobile("HArrier","9000cc","240kmph");
+
+    console.log(car1);
+    console.log(car2);
+    console.log(car3);
+    console.log(car4);
+
+
+     // using object.create
+
+    const Cars = {
+        brand : "Tata",
+        wheels : 4,
+        airbag : true,
+        seats: 5,
+        powerwindow : 2,
+        break : true,
+        maxSpeed: "180kmph",
+    };
+   
+    let c1 = Object.create(Cars,{name :{value : "Nexon"}});
+    let c2 = Object.create(Cars,{name :{value : "Tiago"}});
+    let c3 = Object.create(Cars,{name :{value : "Altroz"}});
+    let c4 = Object.create(Cars,{name :{value : "Harrier"}});
+    console.log(c1);
+    console.log(c2);
+    console.log(c3);
+    console.log(c4);
+</script>

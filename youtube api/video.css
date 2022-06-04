@@ -1,0 +1,57 @@
+#topbar{
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bolder;
+    height: 60px;
+}
+#query{
+    margin: 20px;
+    margin-top: 10px;
+    height: 35px;
+    width: 500px;
+    margin-left: 120px;
+    font-size: large;
+    outline: none;
+}
+.ylogo{
+    margin-top: 25px;
+    height: 80px;
+    color: red;
+    padding: 8px;
+    cursor: pointer;
+
+    
+}
+.list{
+    margin: 32px 10px 0px 30px;
+    cursor: pointer;
+
+}
+button{
+    height: 30px;
+    margin-top: 17px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+
+}
+.v_icon{
+    margin: 32px 10px 0px ;
+    margin-left: 200px; 
+    cursor: pointer;
+}
+.bell_icon{
+    margin: 32px 10px 0px 30px;
+    color: red;
+    cursor: pointer;
+}
+.user_icon{
+    margin: 32px 10px 0px ;
+    margin-left: 70px;
+    color: grey;
+    cursor: pointer;
+}
+.video_div{
+    font-family: sans-serif;
+}

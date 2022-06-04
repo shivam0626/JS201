@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Custom Array</h1>
+</body>
+</html>
+<script>
+    class MyArray{
+    constructor(){
+        this.length = 0;
+        this.array = [];
+    }
+    push(x){
+        this.array[this.length] = x;
+        this.length++;
+    }
+    pop(){
+        this.array.pop();
+        this.length--;
+       
+    }
+    top(){
+        return this.array[this.length-1];
+    }
+    print(){
+        let temp  = [];
+        for(let i=0;i<this.length;i++){
+            temp.push(this.array[i]);
+        }
+        return temp;
+    }
+    printrev(){
+        let temp  = [];
+        for(let i=this.length-1;i>=0;i--){
+            temp.push(this.array[i]);
+        }
+        return temp;
+    }
+    size(){
+        return this.length;
+    }
+}
+
+let a1 = new MyArray();
+a1.push(5);
+a1.push(6);
+a1.push(46);
+a1.push(34);
+a1.push(67);
+a1.push(69);
+a1.pop();
+console.log(a1);
+console.log(a1.top());
+console.log(a1.print())
+console.log(a1.printrev());
+console.log(a1.size());
+
+
+
+
+</script>
